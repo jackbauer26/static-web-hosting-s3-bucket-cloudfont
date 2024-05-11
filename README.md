@@ -30,27 +30,27 @@ Amazon CloudFront is a fast, secure, and highly scalable content delivery networ
 
 Create an  S3 Bucket after you log in to the AWS Console. Invoke the S3 Bucket resource and give it a name of your choice while following the naming convention
 
-![alt text](provide-your-s3-bucket-name.png)
+![alt text](screenshot-assets/provide-your-s3-bucket-name.png)
 
 *   As seen in the screen shot above, the name of my bucket is `ibraheem-aws`
 
-![alt Image Created Successfully](created-s3-bucket.png)
+![alt Image Created Successfully](screenshot-assets/created-s3-bucket.png)
 
 *   Image Created Successfully as evident from the image above
 
 2 - Now that we have created our S3 bucket, we need to upload the static files of our website from wherever they are sitting into our bucket
 
-![alt text](file-upload-in-progress.png)
+![alt text](screenshot-assets/file-upload-in-progress.png)
 
 - The image above shows that the folder contents are being uploaded 
 
-![alt text](file-upload-successful.png)
+![alt text](screenshot-assets/file-upload-successful.png)
 
 * Now the folder has been uploaded successfully into the `ibraheem-aws` bucket created as shown above.
 
 Afte the folder has been uploaded into the S3 bucket, we need to dump the filed directly into the S3 bucket. 
 
- ![alt text](Objects-successfully-moved-to-the-s3-bucket.png)
+ ![alt text](screenshot-assets/Objects-successfully-moved-to-the-s3-bucket.png)
 
  Voila, we now have now created the S3 Bucket successfully and uploaded our files.
 
@@ -60,32 +60,32 @@ Afte the folder has been uploaded into the S3 bucket, we need to dump the filed 
 
  So, we search for the AWS CloudFont Resource and we create the CloudFont
 
- ![alt text](Create-the-cloudfont-service.png)
+ ![alt text](screenshot-assets/Create-the-cloudfont-service.png)
  
  -  Click on the Create a CloudFont distribution button to create the cloudfont
 
  When this is done, we then create a origin domain, this is done by selecting the S3 bucket name and creating an Origin Access Control setting. This is show below
 
- ![alt text](provide-a-distribution-name-and-an-AOC.png)
+ ![alt text](screenshot-assets/provide-a-distribution-name-and-an-AOC.png)
 
  When the OAC is created, we can then set our firewall settings  by selecting the `Enable security Protection` option 
 
- ![alt text](enable-security-protection.png)
+ ![alt text](screenshot-assets/enable-security-protection.png)
 
  Now create the distribution.  However, before the distribution set up is completed, be sure to enter the index.html file name in the Default root object field
 
-![alt text](Create-the-cloudfont-distro.png)
+![alt text](screenshot-assets/Create-the-cloudfont-distro.png)
 
 Next, copy the cloudfont distribution generated policy and paste into the permissions field of the S3 bucket
 
-![alt text](copy-the-cloudfont-policy-to-the-s3-bucket.png)
+![alt text](screenshot-assets/copy-the-cloudfont-policy-to-the-s3-bucket.png)
 
-![alt text](the-policy-pasted-into-the-s3-bucket-from-cloudfont.png)
+![alt text](screenshot-assets/the-policy-pasted-into-the-s3-bucket-from-cloudfont.png)
 
 Finally, back at the cloudfont distribution, ensure to copy the distribution domain name and paste in the browser search field
 
-![alt text](distribution-domain-name.png)
+![alt text](screenshot-assets/distribution-domain-name.png)
 
 Confirm the website is working as expected 
 
-![alt text](Landing-Page-of-the-hosted-static-page.png)
+![alt text](screenshot-assets/Landing-Page-of-the-hosted-static-page.png)
